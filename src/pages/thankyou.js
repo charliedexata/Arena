@@ -22,7 +22,8 @@ export default function Thankyou() {
       "product_name": order?.products.map(order => order.Product_Name),
       "product_price": order?.products.map(order => order.Product_Price),
       "product_quantity": order?.products.map(function () { return 1 }),
-      "product_category": order?.products.map(order => categories.filter((category) => category.Category_Id == order?.Category_Id)[0].Category_Name)
+      "product_category": order?.products.map(order => categories.filter((category) => category.Category_Id == order?.Category_Id)[0].Category_Name),
+      "at_property": "c43182c9-f2e4-b078-c499-14cc9f882923"
     }
     auth.user_id && (dataLayer["customer_id"] = auth.user_id);
     order?.user_email && (dataLayer["customer_id"] = order?.user_email);

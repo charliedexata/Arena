@@ -14,7 +14,8 @@ export default function Home() {
       "page_section": "Home",
       "login_status": auth.loggedIn_status,
       "currency": "usd",
-      "channel": "web"
+      "channel": "web",
+      "at_property": "c43182c9-f2e4-b078-c499-14cc9f882923"
     }
     auth.user_id && (dataLayer["customer_id"] = auth.user_id);
     if(window.utag) {

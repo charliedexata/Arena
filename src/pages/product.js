@@ -41,7 +41,8 @@ export default function Product() {
       "product_id": selectedProduct?.Product_Id.split(','),
       "product_name": selectedProduct?.Product_Name.split(','),
       "product_category": categories.filter((category) => category.Category_Id === selectedProduct?.Category_Id)[0].Category_Name,
-      "product_price": String(selectedProduct?.Product_Price).split(',')
+      "product_price": String(selectedProduct?.Product_Price).split(','),
+      "at_property": "c43182c9-f2e4-b078-c499-14cc9f882923"
     }
     auth.user_id && (dataLayer["customer_id"] = auth.user_id);
     if(window.utag) {
